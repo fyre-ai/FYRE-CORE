@@ -1,0 +1,28 @@
+{
+  "name": "token-creation-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js create-token",
+    "help": "node src/index.js --help",
+    "test": "vitest run",
+    "verify": "node src/index.js verify-token"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0",
+    "axios": "^1.6.2",
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.9",
+    "dotenv": "^16.3.1",
+    "ora": "^7.0.1",
+    "inquirer": "^9.2.12",
+    "qrcode-terminal": "^0.12.0",
+    "table": "^6.8.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}
